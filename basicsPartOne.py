@@ -36,5 +36,41 @@ while condition > 0:
     print('true', condition)
     condition -= 1
 
-
+#for loops
+exampleList = [1,6,7,3,6,9,0]
+for thing in exampleList:
+    print(thing)
     
+for x in range(1,11):
+    print('range', x)
+
+#if statements
+a = 2
+b = 7
+c = 10
+
+if c > b:
+    print(c, 'is greater than', b)
+if c == b + 3:
+    print('both ten')
+
+#if else
+if c < b:
+    print(c, 'is greater than', b)
+else:
+    print(b, 'is not greater than', c)
+    
+#elif
+if c < b:
+    print(c, 'is greater than', b)
+elif c > b:
+    print(b, 'is not greater than', c, 'using elif')
+else:
+    print('nope')
+
+#functions
+def example():
+    print('example function')
+
+example()
+
