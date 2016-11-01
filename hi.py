@@ -22,3 +22,19 @@ print(_100ma)
 #seems super similar to ruby so far, except print instead of puts
 
 #while loops
+condition = 1
+while condition <= 10: 
+    print(condition)
+    '''
+    multi line comment with triple quote
+    '''
+    condition += 1
+
+condition = 5
+
+while condition > 0:
+    print('true', condition)
+    condition -= 1
+
+
+    
