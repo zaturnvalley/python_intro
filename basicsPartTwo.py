@@ -32,4 +32,11 @@ def website(font='TNR',
 #then can change those defaults via this
 website(background_color = 'green')
 
-#global global and local variables
+#writing to a file
+writeMe = 'example text'
+
+saveFile = open('exampleWrite.txt','w')
+saveFile.write(writeMe)
+saveFile.close()
+
+##appending to a file
