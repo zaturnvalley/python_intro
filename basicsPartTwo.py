@@ -34,9 +34,29 @@ website(background_color = 'green')
 
 #writing to a file
 writeMe = 'example text'
-
+#w for write
 saveFile = open('exampleWrite.txt','w')
 saveFile.write(writeMe)
 saveFile.close()
 
 ##appending to a file
+
+appendMe = 'some more text'
+#a for append
+saveFile = open('exampleWrite.txt', 'a')
+saveFile.write('\n')
+saveFile.write(appendMe)
+saveFile.close()
+
+#reading from a file
+readMe = open('exampleWrite.txt', 'r').read()
+print(readMe)
+#puts into python list
+splitMe = readMe.split('\n')
+print(splitMe[1])
+
+#this will show new lines via \n
+readMe2 = open('exampleWrite.txt','r').readlines()
+print(readMe2)
+
+#classes
