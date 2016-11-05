@@ -33,7 +33,7 @@ def website(font='TNR',
 website(background_color = 'green')
 
 #writing to a file
-writeMe = 'example text'
+writeMe = 'example text created with write'
 #w for write
 saveFile = open('exampleWrite.txt','w')
 saveFile.write(writeMe)
@@ -41,7 +41,7 @@ saveFile.close()
 
 ##appending to a file
 
-appendMe = 'some more text'
+appendMe = 'some more text created with append'
 #a for append
 saveFile = open('exampleWrite.txt', 'a')
 saveFile.write('\n')
@@ -60,3 +60,50 @@ readMe2 = open('exampleWrite.txt','r').readlines()
 print(readMe2)
 
 #classes
+class calc:
+
+  def add(x,y):
+    answer = x+y
+    print(answer)
+  def sub(x,y):
+    answer = x-y
+    print(answer)
+  def mult(x,y):
+    answer = x*y
+    print(answer)
+  def div(x,y):
+    answer = x/y
+    print(answer)
+
+#Input and statistics
+#Input from User:
+"""
+name = input('what is your name?: ')
+print('Hello ', name)
+"""
+##import statistics 
+##
+##exList = [5,4,3,2,6,3]
+##x = statistics.mean(exList)
+##print(x)
+##
+##x = statistics.median(exList)
+##print('median', x)
+##
+##x = statistics.mode(exList)
+##print('mode', x)
+##
+##x = statistics.stdev(exList)
+##print('stdev', x)
+##
+##x = statistics.variance(exList)
+##print('variance', x)
+
+#import syntax
+from statistics import mean as m
+##import statistics as s
+myList - [3,4,7,8,3,1]
+##print(s.mean(exList))
+print('stat mean import syntx', m(myList))
+
+

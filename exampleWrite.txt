@@ -1,2 +1,2 @@
-example text
-some more text
+example text created with write
+some more text created with append
