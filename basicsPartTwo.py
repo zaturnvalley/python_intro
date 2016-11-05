@@ -100,10 +100,15 @@ print('Hello ', name)
 ##print('variance', x)
 
 #import syntax
+# from statistics import mean as m, stdev as s
 from statistics import mean as m
 ##import statistics as s
-myList - [3,4,7,8,3,1]
+myList = [3,4,7,8,3,1]
 ##print(s.mean(exList))
 print('stat mean import syntx', m(myList))
+
+# if you want all
+# from statistics import *
+
 
 
