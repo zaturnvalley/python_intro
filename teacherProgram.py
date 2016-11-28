@@ -10,4 +10,13 @@ def main():
   """)
   action = input('What would you like to do today? (Enter a number ')
 
+  if action == '1':
+    print('1')
+  elif action = '2':
+    print('2')
+  elif action = '3':
+    print('3')
+  else:
+    print('No valid choice was given, try again')
+
 main()
