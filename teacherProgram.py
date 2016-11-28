@@ -3,6 +3,9 @@
 #imports
 import statistics
 
+#constants
+admins =  {'Python':'Pass123@', 'user2':'pass2'}
+
 #program
 def main():
   print("""
@@ -26,6 +29,8 @@ def main():
 
 login = input('Username: ')
 passw = input('Password: ')
+
+
 
 while True:
   main()
