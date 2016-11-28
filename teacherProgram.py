@@ -27,10 +27,17 @@ def main():
   else:
     print('No valid choice was given, try againg')
 
+
+
 login = input('Username: ')
 passw = input('Password: ')
 
-
-
-while True:
-  main()
+if login in admins:
+    if admins[login] == passw:
+      print('Welcome,',login)
+        while True:
+          main()
+    else:
+      print('Invalid password')
+else:
+  print('Invalid username')
