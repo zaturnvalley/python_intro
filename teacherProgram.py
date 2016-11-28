@@ -1,4 +1,9 @@
 # Program For Keeping a Log of Student Grades
+
+#imports
+import statistics
+
+#program
 def main():
   print("""
   Welcome to Grade Central
@@ -17,6 +22,10 @@ def main():
   elif action = '3':
     print('3')
   else:
-    print('No valid choice was given, try again')
+    print('No valid choice was given, try againg')
 
-main()
+login = input('Username: ')
+passw = input('Password: ')
+
+while True:
+  main()
