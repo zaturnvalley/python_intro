@@ -6,6 +6,19 @@ import statistics
 #constants
 admins =  {'Python':'Pass123@', 'user2':'pass2'}
 
+studentDict = {'Jack':[80,90,88],
+               'Alex':[94,59,69],
+               'Beth':[49,100,99]}
+
+def enterGrades():
+  nameToEnter = input('Student Name: ')
+  gradeToEnter = input('Grade: ')
+
+  if nameToEnter in studentDict:
+    print('Adding Grade...')
+    studentDict[nameToEnter].append(float(gradeToEnter))
+  else:
+    print('Student does not exist.')
 #program
 def main():
   print("""
