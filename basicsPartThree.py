@@ -82,3 +82,14 @@ print(gradeDict['David'])
 gradeDict['David'] = 70
 print(gradeDict)
 gradeDict['John'] = 92
+
+#can drop from dictionary with del
+del gradeDict['David']
+
+#value of dictionary can be a list, can be formatted as such
+gradeDictTwo = {'John':[90,88], 
+                'David':[65,78], 
+                'Jack':[95,99]}
+
+#reference key's list as such:
+print(gradeDictTwo['John'][0])
