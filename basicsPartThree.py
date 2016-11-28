@@ -76,3 +76,9 @@
 # dictionaries (similar to object in JS, also mutable, key value paris)
 
 gradeDict = {'John':90, 'David':65, 'Jack':95}
+print(gradeDict)
+print(gradeDict['David'])
+#can update, mutable
+gradeDict['David'] = 70
+print(gradeDict)
+gradeDict['John'] = 92
