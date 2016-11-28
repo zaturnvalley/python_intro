@@ -44,31 +44,35 @@
 # print(b)
 
 #list example (mutable, sim to array but not)
-xList = [5,4,3,2,2]
+# xList = [5,4,3,2,2]
 
-print(xList)
-print(xList[2])
+# print(xList)
+# print(xList[2])
 
-# adds to list end
-xList.append(12)
-print(xList)
-# insert into spot
-xList.insert(4,300)
-print(xList)
-# will remove first seven
-xList.remove(5)
-print(xList.index(4))
-print(xList.count(2))
-xList.sort()
-print(xList)
+# # adds to list end
+# xList.append(12)
+# print(xList)
+# # insert into spot
+# xList.insert(4,300)
+# print(xList)
+# # will remove first seven
+# xList.remove(5)
+# print(xList.index(4))
+# print(xList.count(2))
+# xList.sort()
+# print(xList)
 
-# changing value of xList
-xList = ['bill', 'ted', 'jan', 'donna']
-print(xList)
+# # changing value of xList
+# xList = ['bill', 'ted', 'jan', 'donna']
+# print(xList)
 
-# changes order / mutates list
-xList.sort()
-print(xList)
-# reverse list
-xList.reverse()
-print(xList)
+# # changes order / mutates list
+# xList.sort()
+# print(xList)
+# # reverse list
+# xList.reverse()
+# print(xList)
+
+# dictionaries (similar to object in JS, also mutable, key value paris)
+
+gradeDict = {'John':90, 'David':65, 'Jack':95}
