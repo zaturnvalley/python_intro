@@ -32,6 +32,8 @@ def studentAVGs():
     gradeList = studentDict[eachStudent]
     avgGrade = m(gradeList)
 
+    print(eachStudent, 'has an average grade of:', avgGrade)
+
 #program
 def main():
   print("""
@@ -49,7 +51,7 @@ def main():
   elif action = '2':
     removeStudent()
   elif action = '3':
-    print('3')
+    studentAVGs()
   elif action == '4':
     exit()
   else:
