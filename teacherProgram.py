@@ -1,7 +1,7 @@
 # Program For Keeping a Log of Student Grades
 
 #imports
-import statistics
+from statistics import mean as m
 
 #constants
 admins =  {'Python':'Pass123@', 'user2':'pass2'}
@@ -27,6 +27,10 @@ def removeStudent():
     print('removing student...')
     del studentDict[nameToRemove]
     print(studentDict)
+def studentAVGs():
+  for eachStudent in studentDict:
+    gradeList = studentDict[eachStudent]
+    avgGrade = m(gradeList)
 
 #program
 def main():
