@@ -48,9 +48,9 @@ def main():
 
   if action == '1':
     enterGrades()
-  elif action = '2':
+  elif action == '2':
     removeStudent()
-  elif action = '3':
+  elif action == '3':
     studentAVGs()
   elif action == '4':
     exit()
@@ -65,8 +65,8 @@ passw = input('Password: ')
 if login in admins:
     if admins[login] == passw:
       print('Welcome,',login)
-        while True:
-          main()
+      while True:
+        main()
     else:
       print('Invalid password')
 else:
