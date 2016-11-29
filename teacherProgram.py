@@ -17,9 +17,15 @@ def enterGrades():
   if nameToEnter in studentDict:
     print('Adding Grade...')
     studentDict[nameToEnter].append(float(gradeToEnter))
+    if studentDict[nameToEnter][0] == []:
+      del studentDict[nameToEnter][0]
   else:
     print('Student does not exist.')
   print(studentDict) 
+def addStudent():
+  nameToAdd = input('What is the name of this student?: ')
+  studentDict[nameToAdd] = []
+  print(studentDict)
 
 def removeStudent():
   nameToRemove = input('What student to remove?: ')
@@ -40,19 +46,22 @@ def main():
   Welcome to Grade Central
 
   [1] - Enter Grades
-  [2] - Remove Student
-  [3] - Student Average Grades
-  [4] - Exit
+  [2] - Add Student
+  [3] - Remove Student
+  [4] - Student Average Grades
+  [5] - Exit
   """)
-  action = input('What would you like to do today? (Enter a number ')
+  action = input('What would you like to do today? (Enter a number: )')
 
   if action == '1':
     enterGrades()
   elif action == '2':
-    removeStudent()
+    addStudent()
   elif action == '3':
-    studentAVGs()
+    removeStudent()
   elif action == '4':
+    studentAVGs()
+  elif action == '5':
     exit()
   else:
     print('No valid choice was given, try againg')
