@@ -8,7 +8,7 @@ class Program():
     self.skill = input("What skill level?: ")
   
   def upgrade(self):
-    new_version = input("What version?: ")
+    new_version = float(input("What version?: "))
     print("We have updated the version for", self.lang) 
     self.version = new_version
 
